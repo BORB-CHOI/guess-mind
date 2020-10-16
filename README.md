@@ -1,4 +1,4 @@
-# guess-mind
+# Guess-Mind
 
 Real Time Drawing Game buit with SocketIO, Gulp and Node
 
@@ -12,4 +12,4 @@ Set Up
 - [x] Pug
 - [x] Static
 - [x] ESLint
-- [x] SocketIO
+- [x] # SocketIO
