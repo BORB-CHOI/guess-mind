@@ -12,4 +12,4 @@ Set Up
 - [x] Pug
 - [x] Static
 - [x] ESLint
-- [x] # SocketIO
+- [x] SocketIO
