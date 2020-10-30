@@ -13,3 +13,11 @@ Set Up
 - [x] Static
 - [x] ESLint
 - [x] SocketIO
+
+- [x] Gulp
+
+Work
+
+- [x] Log In
+- [ ] Notifications and Chat
+- [ ] Live Painting
