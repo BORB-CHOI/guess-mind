@@ -19,5 +19,5 @@ Set Up
 Work
 
 - [x] Log In
-- [ ] Notifications and Chat
+- [x] Notifications and Chat
 - [ ] Live Painting
