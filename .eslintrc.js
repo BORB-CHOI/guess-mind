@@ -1,23 +1,23 @@
 module.exports = {
-    env: {
-      browser: true,
-      es6: true,
-      node: true
-    },
-    extends: ["airbnb-base", "prettier"],
-    globals: {
-      Atomics: "readonly",
-      SharedArrayBuffer: "readonly"
-    },
-    parserOptions: {
-      ecmaVersion: 2018,
-      sourceType: "module"
-    },
-    rules: {
-      "no-console": "off"
-    }
-  };
-
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  extends: ["airbnb-base", "prettier"],
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly",
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: "module",
+  },
+  rules: {
+    "no-console": "off",
+    "import/no-cycle": "off",
+  },
+};
 
 // 1. VSC extension에서 ellint 다운로드
 // 2. yarn add eslint-config-airbnb-base eslint eslint-plugin-import || npm add eslint-config-airbnb-base eslint eslint-plugin-import

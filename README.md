@@ -20,4 +20,7 @@ Work
 
 - [x] Log In
 - [x] Notifications and Chat
-- [ ] Live Painting
+- [x] Realtime Painting
+- [ ] Player Board
+- [ ] Game Programming
+- [ ] Game Timeout
