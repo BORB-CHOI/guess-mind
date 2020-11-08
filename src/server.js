@@ -30,3 +30,5 @@ io.on("connection", (socket) => socketController(socket, io));
 
 // "copyAll": "xcopy \"src/static\" /S \"dist/static\" && xcopy \"src/views\" \"dist/views\" /S",
 // "prebuild": "rd /s \"dist\"",
+
+// sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3001

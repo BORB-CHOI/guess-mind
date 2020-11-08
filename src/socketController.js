@@ -27,6 +27,13 @@ const socketController = (socket, io) => {
   const startGame = () => {
     if (sockets.length > 1) {
       if (inProgress === false) {
+        if (timeout) {
+          clearTimeout(timeout);
+        }
+        if (interval) {
+          clearInterval(interval);
+          time = 60;
+        }
         inProgress = true;
         painter = choosePainter();
         word = chooseWord();
