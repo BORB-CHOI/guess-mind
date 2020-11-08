@@ -31,8 +31,8 @@
     "dev:assets": "gulp",
     "build:server": " babel src --out-dir dist --ignore src/assets --ignore src/static ",
     "build:assets": "gulp build",
-    "copyAll": "xcopy \"src/static\" /S \"dist/static\" && xcopy \"src/views\" \"dist/views\" /S",
-    "prebuild": "rd /s \"dist\"",
+    "copyAll": "cp -R src/static dist && cp -R src/views dist",
+    "prebuild": "rm -rf dist",
     "build": "yarn build:server && yarn build:assets && yarn copyAll",
     "prestart": "yarn build",
     "start": "node dist/server.js"
