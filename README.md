@@ -13,7 +13,6 @@ Set Up
 - [x] Static
 - [x] ESLint
 - [x] SocketIO
-
 - [x] Gulp
 
 Work
@@ -24,3 +23,7 @@ Work
 - [x] Player Board
 - [x] Game Programming
 - [x] Game Timeout
+
+Deploy
+
+- [x] Script
