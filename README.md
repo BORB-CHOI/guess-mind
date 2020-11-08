@@ -21,6 +21,6 @@ Work
 - [x] Log In
 - [x] Notifications and Chat
 - [x] Realtime Painting
-- [ ] Player Board
-- [ ] Game Programming
-- [ ] Game Timeout
+- [x] Player Board
+- [x] Game Programming
+- [x] Game Timeout

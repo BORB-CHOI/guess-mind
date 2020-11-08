@@ -16,6 +16,8 @@ module.exports = {
   rules: {
     "no-console": "off",
     "import/no-cycle": "off",
+    "no-return-assign": "off",
+    "no-param-reassign": "off",
   },
 };
 

@@ -7,6 +7,7 @@
   "author": "Your Name <you@example.com>",
   "license": "MIT",
   "dependencies": {
+    "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.1",
     "@babel/node": "^7.12.1",
     "@babel/preset-env": "^7.12.1",
@@ -27,7 +28,13 @@
   },
   "scripts": {
     "dev:server": "nodemon --exec babel-node src/server --ignore assets/ --ignore src/static",
-    "dev:assets": "gulp"
+    "dev:assets": "gulp",
+    "build:server": " babel src --out-dir dist --ignore src/assets --ignore src/static ",
+    "build:assets": "gulp build",
+    "copyAll": "xcopy \"src/static\" /S \"dist/static\" && xcopy \"src/views\" \"dist/views\" /S",
+    "prebuild": "rd /s \"dist\"",
+    "build": "yarn build:server && yarn build:assets && yarn copyAll",
+    "start": "node build/server.js"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^14.2.0",
