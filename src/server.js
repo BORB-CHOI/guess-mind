@@ -28,5 +28,5 @@ const io = socketIO.listen(HTTPserver); // 서버에 socketIO를 올림 그리�
 io.on("connection", (socket) => socketController(socket, io));
 // 소켓은 객체이기 때문에 socket.potato 같이 이론적으로 추가적인 옵션(정보)를 담아 줄 수 있다.
 
-// "copyAll": "xcopy \"src/static\" /e/s/y \"build\" && xcopy \"src/views\" \"build\" /e/s/y",
-// "prebuild": "rd /s \"build\"",
+// "copyAll": "xcopy \"src/static\" /S \"dist/static\" && xcopy \"src/views\" \"dist/views\" /S",
+// "prebuild": "rd /s \"dist\"",

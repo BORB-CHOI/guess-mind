@@ -8,7 +8,8 @@ import {
 } from "./paint";
 
 const board = document.getElementById("jsPBoard");
-const notifs = document.getElementById("jsNotifs");
+const title = document.getElementById("jsTitle");
+const timer = document.getElementById("jsTimer");
 
 const addPlayers = (players) => {
   board.innerHTML = "";
@@ -19,25 +20,25 @@ const addPlayers = (players) => {
   });
 };
 
-const setNotifs = (text) => {
-  notifs.innerText = text;
+const setTitle = (text) => {
+  title.innerText = text;
 };
 
 export const handlePlayerUpdate = ({ sockets }) => addPlayers(sockets);
 export const handleGameStarted = () => {
-  setNotifs("");
+  setTitle("It's a game where you match answers through chat!");
   disableCanvas();
   hideControls();
 };
 export const handlePainterNotif = ({ word }) => {
-  setNotifs(`You are painter, paint: ${word}`);
+  setTitle(`You are painter, paint: ${word}`);
   enableCanvas();
   showContorls();
   disableChat();
 };
 
 export const handleGameEnded = () => {
-  setNotifs("Game ended");
+  setTitle("Game ended.");
   disableCanvas();
   hideControls();
   enableChat();
@@ -45,5 +46,9 @@ export const handleGameEnded = () => {
 };
 
 export const handleGameStarting = () => {
-  setNotifs("Game will start soon");
+  setTitle("Game will start soon...");
+};
+
+export const handleCurrentTime = ({ time }) => {
+  timer.innerText = time;
 };

@@ -1,0 +1,18 @@
+.notifs {
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  text-align: center;
+  .notifs__title {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .notifs__timer {
+    font-weight: 800;
+    font-size: 22px;
+  }
+}

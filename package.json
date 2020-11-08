@@ -34,7 +34,8 @@
     "copyAll": "xcopy \"src/static\" /S \"dist/static\" && xcopy \"src/views\" \"dist/views\" /S",
     "prebuild": "rd /s \"dist\"",
     "build": "yarn build:server && yarn build:assets && yarn copyAll",
-    "start": "node build/server.js"
+    "prestart": "yarn build",
+    "start": "node dist/server.js"
   },
   "devDependencies": {
     "eslint-config-airbnb-base": "^14.2.0",
