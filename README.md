@@ -29,5 +29,5 @@ Deploy
 - [x] Script
 
 Link
-================
-https://guessmind.org
+--------------
+> https://guessmind.org
