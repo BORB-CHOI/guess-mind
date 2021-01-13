@@ -32,5 +32,5 @@ Deploy
 
 ## Link
 
-[https://guessmind.org]https://guessmind.org
+[https://guessmind.org](https://guessmind.org)
 
