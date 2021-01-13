@@ -28,6 +28,5 @@ Deploy
 
 - [x] Script
 
-Link
---------------
->https://guessmind.org
+##Link
+  https://guessmind.org
